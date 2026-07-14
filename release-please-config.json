@@ -7,5 +7,6 @@
     ".": {
       "package-name": "videoMerge"
     }
-  }
+  },
+  "include-component-in-tag": false
 }
