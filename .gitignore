@@ -22,5 +22,8 @@ env/
 .DS_Store
 Thumbs.db
 
+# Environment files
+.env
+
 # Firebase
 firebase-debug.log
