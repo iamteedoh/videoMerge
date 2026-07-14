@@ -1,0 +1,79 @@
+name: Bug report
+description: Report a reproducible videoMerge problem
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not paste tokens, passwords,
+        personal media file names, or private host details.
+
+  - type: input
+    id: version
+    attributes:
+      label: videoMerge version
+      description: Provide a release tag or commit SHA.
+      placeholder: v0.1.0 or 0123456
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Folder and clip discovery
+        - Encoder detection or selection
+        - Sanitizing re-encode
+        - Concat merge
+        - Interactive prompts or path completion
+        - CI or release automation
+        - Documentation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the OS version, Python version, and `ffmpeg -version` output. Redact private details.
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the observed and expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. Observe ...
+        3. Expected ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant redacted output
+      description: Remove secrets and personal file paths before pasting.
+      render: shell

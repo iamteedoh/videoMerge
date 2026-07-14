@@ -1,0 +1,8 @@
+## Author: Tito Valentin
+## Name of Program: videoMerge Gitleaks Configuration
+## Date Created: 2026-07-13
+## Description: Extends the default Gitleaks rules for repository history scans.
+title = "videoMerge gitleaks configuration"
+
+[extend]
+useDefault = true
