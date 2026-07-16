@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/videoMerge_appThumbnail.png" alt="videoMerge" width="640">
-</p>
-
 # videoMerge
 
 [![CI](https://github.com/iamteedoh/videoMerge/actions/workflows/ci.yml/badge.svg)](https://github.com/iamteedoh/videoMerge/actions/workflows/ci.yml)
@@ -9,6 +5,10 @@
 [![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-%E2%9D%A4-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/iamteedoh)
 [![Patreon](https://img.shields.io/badge/Patreon-support-f96854?logo=patreon)](https://patreon.com/iamteedoh)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-ffdd00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/iamteedoh)
+
+<p align="center">
+  <img src="assets/videoMerge_appThumbnail.png" alt="videoMerge" width="640">
+</p>
 
 Merge segmented video clips back into one full-length file per folder, using
 ffmpeg. Point it at a directory and it finds the video files in that directory
