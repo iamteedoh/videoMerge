@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/videoMerge_appThumbnail.png" alt="videoMerge" width="640">
+</p>
+
 # videoMerge
 
 [![CI](https://github.com/iamteedoh/videoMerge/actions/workflows/ci.yml/badge.svg)](https://github.com/iamteedoh/videoMerge/actions/workflows/ci.yml)
