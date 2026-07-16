@@ -6,14 +6,14 @@
 [![Patreon](https://img.shields.io/badge/Patreon-support-f96854?logo=patreon)](https://patreon.com/iamteedoh)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-ffdd00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/iamteedoh)
 
-<p align="center">
-  <img src="assets/videoMerge_appThumbnail.png" alt="videoMerge" width="640">
-</p>
-
 Merge segmented video clips back into one full-length file per folder, using
 ffmpeg. Point it at a directory and it finds the video files in that directory
 and in each first-level subfolder, sorts them naturally (`clip_2` before
 `clip_10`), and concatenates each folder's clips into a single output file.
+
+<p align="center">
+  <img src="assets/videoMerge_appThumbnail.png" alt="videoMerge" width="640">
+</p>
 
 ## Requirements
 
