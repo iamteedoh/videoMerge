@@ -29,7 +29,10 @@ Debian/Ubuntu) and exits.
 python3 merge_videos.py
 ```
 
-The script is interactive:
+On launch it prints a title banner and a short description, then walks you
+through a colour-coded, numbered flow (colour is used only on an interactive
+terminal — it is disabled automatically when output is piped, when `NO_COLOR`
+is set, or when `TERM=dumb`):
 
 1. **Enter the path** containing your videos (tab completion is supported
    where the `readline` module is available). Videos are collected from that
@@ -47,19 +50,31 @@ folder. The merge first attempts a fast lossless stream copy and falls back to
 a re-encode when the clips cannot be concatenated as-is. Recognized input
 extensions: `.mp4`, `.mov`, `.mkv`, `.avi`, `.flv`, `.wmv`, `.m4v`, `.webm`.
 
-Example:
+Example (shown here without the colour the terminal adds):
 
 ```text
-Enter the full path containing your videos: /path/to/recordings
-Optional: re-encode each clip before merging to eliminate decoder warnings.
-Enable sanitizing re-encode? [Y/n]: y
-Multiple folders with videos detected. Select an option:
-  1) Merge all folders
-  2) Merge a single folder
-Enter 1 or 2: 1
+   █   █ █████ ████  █████  ███    █   █ █████ ████   ███  █████
+   █   █   █   █   █ █     █   █   ██ ██ █     █   █ █     █
+   █   █   █   █   █ ████  █   █   █ █ █ ████  ████  █  ██ ████
+    █ █    █   █   █ █     █   █   █   █ █     █  █  █   █ █
+     █   █████ ████  █████  ███    █   █ █████ █   █  ███  █████
+            Stitch your split clips back into one whole film
+
+  ①  Where are your videos?
+      Enter a folder path — Tab completes it where readline is available.
+  ➤ Path: /path/to/recordings
+
+  ②  Sanitize clips before merging? (optional)
+  ➤ Enable sanitizing re-encode? [Y/n]: y
+
+  ③  Found 2 folders with videos — what should I merge?
+      1  Merge every folder
+      2  Pick a single folder
+  ➤ Enter 1 or 2: 1
 Processing folder 1/2 ( 50.0%): /path/to/recordings/session_a
   Using encoders: video=libx264, audio=aac
 Merging 12 videos in '/path/to/recordings/session_a' -> '/path/to/recordings/session_a/combined/session_a_full.mp4'
+  ✔ Created /path/to/recordings/session_a/combined/session_a_full.mp4
 ```
 
 Original clips are never modified or deleted; temporary sanitize files are
